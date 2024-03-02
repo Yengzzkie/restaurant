@@ -2,6 +2,13 @@
 @import './css/menu.css';
 @import './css/contact.css';
 
+:root {
+    --light-yellow: #ffde73;
+    --golden-yellow: #ffc60b;
+    --chocolate: #c16a08;
+    --dark-chocolate: #b15300;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,13 +16,19 @@
 }
 
 body {
-    background: brown;
+    background: #f5f5f5;
+
+    .content-wrapper {
+        width: 50vw;
+        height: 75vh;
+        margin: 50px auto 0 auto;
+    }
 
     header {
-        color: #fff;
+        background: var(--golden-yellow);
+        color: var(--dark-chocolate);
         display: flex;
         align-items: center;
-        background: #5D432C;
         height: 100px;
         min-width: 100%;
         padding: 0px 20px;
@@ -23,8 +36,6 @@ body {
 
     nav {
         display: flex;
-        width: 50vw;
-        margin: 50px auto 0 auto;
 
         ul {
             display: flex;
@@ -32,20 +43,26 @@ body {
             width: 100%;
 
             li {
-                background: #fff;
+                background: var(--light-yellow);
                 text-align: center;
                 border-radius: 10px 10px 0 0;
                 width: 100%;
-                padding: 20px 40px;
+                padding: 10px;
+            }
+
+            li.active {
+                background: var(--chocolate);
             }
         }
     }
 
     #app {
-        color: #fff;
-        border: 1px solid black;
+        background: var(--light-yellow);
+        color: rgb(0, 0, 0);
+        border: 8px solid var(--chocolate);
+        border-radius: 0 0 10px 10px;
         width: 50vw;
-        margin: auto;
+        height: 100%;
         padding: 50px;
     }
 }

@@ -18,3 +18,20 @@ component(homeContent());
 document.getElementById('home').addEventListener('click', () => component(homeContent()));
 document.getElementById('menu').addEventListener('click', () => component(menuContent()));
 document.getElementById('contact').addEventListener('click', () => component(contactContent()));
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var navItems = document.querySelectorAll('nav ul li');
+
+    navItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            // Remove 'active' class from all items
+            navItems.forEach(function (navItem) {
+                navItem.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked item
+            item.classList.add('active');
+        });
+    });
+});
