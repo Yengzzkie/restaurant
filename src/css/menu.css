@@ -30,7 +30,7 @@ h1 {
     flex-direction: column;
     border: 5px solid var(--chocolate);
     border-radius: 15px;
-    box-shadow: -.5rem -.5rem 1rem #ffe282, .5rem .5rem 1rem var(--golden-yellow);
+    box-shadow: .5rem .5rem .5rem #e1ad00;
     min-height: 320px;
     width: 300px;
 
@@ -46,6 +46,7 @@ h1 {
         top: -15%;
         transform: translateX(50%) rotate(-35deg);
         width: 100px;
+        filter: drop-shadow(.5rem .3rem .3rem rgb(48, 48, 48));
         z-index: 2;
     }
 
