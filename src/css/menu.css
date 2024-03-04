@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@700&family=Roboto:wght@700&family=Water+Brush&display=swap");
+
+
+
 .content {
     display: flex;
     flex-direction: column;
@@ -6,6 +10,7 @@
 }
 
 h1 {
+    font-family: var(--poppins);
     text-align: center;
 }
 
@@ -13,7 +18,7 @@ h1 {
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 70px;
     width: 100%;
     margin-top: 50px;
@@ -21,25 +26,45 @@ h1 {
 
 .menu-items {
     position: relative;
+    display: flex;
+    flex-direction: column;
     border: 5px solid var(--chocolate);
     border-radius: 15px;
-    height: 300px;
+    min-height: 350px;
     width: 300px;
-    padding: 35px 15px;
+    /* padding: 35px 15px; */
+
+    h2 {
+        background: var(--chocolate);
+        width: 100%;
+        padding: 10px;
+    }
 
     img {
         position: absolute;
         left: 50%;
-        top: -20%;
-        transform: translateX(-70%) rotate(-25deg);
+        top: -5%;
+        transform: translateX(50%) rotate(-35deg);
         width: 100px;
+        z-index: 2;
+    }
+
+    p {
+        margin: auto;
+        padding: 10px 15px;
+    }
+
+    span {
+        text-align: right;
+        margin: 20px;
+        font-style: italic;
     }
 }
 
 @media only screen and (max-width: 1024px) {
     .menu-items {
-        width: 250px;
-        height: 280px;
+        width: 230px;
+        height: auto;
 
         img {
             width: 75px;

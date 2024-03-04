@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@700&family=Roboto:wght@700&family=Water+Brush&display=swap");
 @import './css/home.css';
 @import './css/menu.css';
 @import './css/contact.css';
@@ -8,6 +9,8 @@
     --golden-yellow: #ffc60b;
     --chocolate: #c16a08;
     --dark-chocolate: #b15300;
+    --poppins: "Poppins", sans-serif;
+    --roboto: "Roboto", sans-serif;
 }
 
 * {
@@ -21,9 +24,9 @@ body {
     height: 100%;
 
     .content-wrapper {
-        width: 50vw;
+        width: 55vw;
         height: 75vh;
-        margin: 20px auto;
+        margin: 50px auto;
     }
 
     header {
