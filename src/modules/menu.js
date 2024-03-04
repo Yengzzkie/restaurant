@@ -8,8 +8,8 @@ const menuItemsData = [
   { name: 'Muffin', image: muffinPNG, alt: 'muffin', desc: 'Delicious Muffin!' },
   { name: 'Croissant', image: croissantPNG, alt: 'croissant', desc: 'Delicious Croissant!' },
   { name: 'Granola', image: granolaPNG, alt: 'granola', desc: 'Delicious Granola!' },
-  { name: 'Donut', image: donutPNG, alt: 'donut'},
-  { name: 'Cake', image: cakePNG, alt: 'cake'}
+  { name: 'Donut', image: donutPNG, alt: 'donut', desc: 'Delicious Doughnut!' },
+  { name: 'Cake', image: cakePNG, alt: 'cake', desc: 'Delicious Cake!' }
 ];
 
 export default function menuContent() {

@@ -12,7 +12,8 @@ h1 {
 .menu-container {
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 70px;
     width: 100%;
     margin-top: 50px;
@@ -35,3 +36,13 @@ h1 {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .menu-items {
+        width: 250px;
+        height: 280px;
+
+        img {
+            width: 75px;
+        }
+    }
+}

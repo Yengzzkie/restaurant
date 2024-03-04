@@ -14,13 +14,11 @@ function component(newContent) {
     return mainContent;
 }
 
-component(menuContent());
+component(homeContent());
 
 document.getElementById('home').addEventListener('click', () => component(homeContent()));
 document.getElementById('menu').addEventListener('click', () => component(menuContent()));
 document.getElementById('contact').addEventListener('click', () => component(contactContent()));
-// **************************************************
-
 
 // header module
 function headerComponent() {
@@ -30,8 +28,6 @@ function headerComponent() {
 };
 
 headerComponent();
-// **************************************************
-
 
 // tab highlighter
 document.addEventListener('DOMContentLoaded', function () {
@@ -49,15 +45,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-// **************************************************
-
-
-
-
-
-
-// const images = importAll(require.context('./assets', true, /\.(png|jpg|gif|svg)$/));
-
-// function importAll(r) {
-//     return r.keys().map(r);
-// };
