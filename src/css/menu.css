@@ -30,6 +30,7 @@ h1 {
     flex-direction: column;
     border: 5px solid var(--chocolate);
     border-radius: 15px;
+    box-shadow: -.5rem -.5rem 1rem #ffe282, .5rem .5rem 1rem var(--golden-yellow);
     min-height: 320px;
     width: 300px;
 
