@@ -1,5 +1,6 @@
 export default function homeContent() {
     const content = document.createElement('div');
+    content.classList.add('content');
 
     content.innerHTML = `
     <h1>Our Mission</h1>

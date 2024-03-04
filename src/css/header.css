@@ -1,0 +1,20 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+h2 {
+letter-spacing: 2px;
+  z-index: 1;
+}
+
+img {
+  position: absolute;
+  left: -40px;
+  width: 50px;
+  margin-left: 10px;
+  z-index: 0;
+}

@@ -1,0 +1,37 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 70px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.menu-items {
+    position: relative;
+    border: 5px solid var(--chocolate);
+    border-radius: 15px;
+    height: 300px;
+    width: 300px;
+    padding: 35px 15px;
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: -20%;
+        transform: translateX(-70%) rotate(-25deg);
+        width: 100px;
+    }
+}
+
