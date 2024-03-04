@@ -30,9 +30,8 @@ h1 {
     flex-direction: column;
     border: 5px solid var(--chocolate);
     border-radius: 15px;
-    min-height: 350px;
+    min-height: 320px;
     width: 300px;
-    /* padding: 35px 15px; */
 
     h2 {
         background: var(--chocolate);
@@ -43,7 +42,7 @@ h1 {
     img {
         position: absolute;
         left: 50%;
-        top: -5%;
+        top: -15%;
         transform: translateX(50%) rotate(-35deg);
         width: 100px;
         z-index: 2;
@@ -62,12 +61,17 @@ h1 {
 }
 
 @media only screen and (max-width: 1024px) {
+    .menu-container {
+        gap: 40px;
+    }
+
     .menu-items {
         width: 230px;
         height: auto;
 
         img {
             width: 75px;
+            top: -5%;
         }
     }
 }
