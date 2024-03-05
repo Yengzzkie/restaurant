@@ -14,7 +14,7 @@ function component(newContent) {
     return mainContent;
 }
 
-component(contactContent());
+component(homeContent());
 
 document.getElementById('home').addEventListener('click', () => component(homeContent()));
 document.getElementById('menu').addEventListener('click', () => component(menuContent()));
