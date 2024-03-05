@@ -1,0 +1,54 @@
+.content h2 {
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  position: relative;
+  margin: 13px;
+}
+
+.input-wrapper label {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+  color: #676767ab;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+
+input {
+  outline: none;
+  width: 100%;
+  padding: 7px 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+button {
+    background: var(--golden-yellow);
+    width: 100px;
+    border: 5px solid var(--chocolate);
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 10px;
+}
+
+input:focus ~ label, input:valid + label {
+  background: var(--light-yellow);
+  color: black;
+  top: -3px;
+  left: 2%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 1px 5px;
+}
